@@ -55,6 +55,14 @@ helps users verify that it comes from the open-source project release process.
 npm run build:windows-installer
 ```
 
+## Build system
+
+GitHub Actions
+
+Workflow:
+
+https://github.com/Manuquake/odk-starcitizen-collector/blob/main/.github/workflows/ci.yml
+
 ## Code signing policy
 
 Release signing is limited to official Windows installer artifacts built from a

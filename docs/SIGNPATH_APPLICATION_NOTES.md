@@ -41,6 +41,14 @@ player-facing artifact should be the signed installer.
 npm run build:windows-installer
 ```
 
+## Build System
+
+GitHub Actions:
+
+```text
+.github/workflows/ci.yml
+```
+
 The build creates:
 
 - `release\ODK-StarCitizen-Collector-Setup.exe`

@@ -74,6 +74,11 @@ Build locally:
 npm run build:windows-installer
 ```
 
+CI build:
+
+- GitHub Actions workflow: `.github/workflows/ci.yml`
+- Artifact name: `unsigned-windows-artifacts`
+
 Output:
 
 ```text
@@ -158,6 +163,7 @@ Signing roles:
 - Repository owner and release approver: `Manuquake`.
 - Changes from external contributors must be reviewed before release.
 - Release artifacts must be built from a tagged commit.
+- CI builds run on GitHub Actions before signing/release.
 - SHA-256 hashes must be published with release artifacts.
 
 Privacy policy:

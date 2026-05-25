@@ -55,6 +55,7 @@ Release signing requirements:
 
 - release must be based on a public Git tag;
 - build must be reproducible from repository scripts;
+- GitHub Actions CI must pass before release signing;
 - repository owner must approve the release;
 - release notes must identify whether the installer is signed;
 - SHA-256 checksums must be published.
