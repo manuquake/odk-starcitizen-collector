@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.2.1 - 2026-05-25
+
+Signing readiness update.
+
+### Added
+
+- Reproducible Windows installer build script.
+- Inno Setup installer definition.
+- Installer privacy summary displayed before installation.
+- ODK icon generation script for installer and shortcuts.
+- Code signing policy section in `README.md` and `CODE_SIGNING.md`.
+- SignPath Foundation application draft.
+
+### Verification
+
+- `npm run check`
+- `npm run build:windows-installer`
+
 ## v0.2.0 - 2026-05-25
 
 Initial public open-source release of ODK Star Citizen Collector.

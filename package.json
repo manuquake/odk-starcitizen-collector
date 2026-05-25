@@ -11,7 +11,8 @@
   "scripts": {
     "collector:init": "node src/cli.js init",
     "collector:run": "node src/cli.js run",
-    "check": "node --check src/cli.js && node --check src/config.js && node --check src/http.js && node --check src/parser.js && node --check src/url.js"
+    "check": "node --check src/cli.js && node --check src/config.js && node --check src/http.js && node --check src/parser.js && node --check src/url.js",
+    "build:windows-installer": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-windows-installer.ps1"
   },
   "keywords": [
     "star-citizen",

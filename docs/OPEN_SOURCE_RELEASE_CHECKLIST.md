@@ -26,6 +26,8 @@ Use this checklist before publishing or tagging a release.
 - [ ] Release artifact is built from this repository.
 - [ ] Release artifact SHA-256 is published.
 - [ ] Installer is signed before public distribution when signing is available.
+- [ ] Release page states the code signing status.
+- [ ] If SignPath is used, release page includes the required SignPath credit.
 
 ## Code Signing Application
 

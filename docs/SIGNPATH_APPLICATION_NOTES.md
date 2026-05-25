@@ -35,6 +35,21 @@ The collector:
 Portable zip files can be distributed with SHA-256 hashes, but the primary
 player-facing artifact should be the signed installer.
 
+## Build Command
+
+```powershell
+npm run build:windows-installer
+```
+
+The build creates:
+
+- `release\ODK-StarCitizen-Collector-Setup.exe`
+- `release\ODK-StarCitizen-Collector-Portable.zip`
+- `release\SHA256SUMS.txt`
+
+The installer displays a privacy summary before installation and installs into
+the current user's local app data folder without requiring administrator rights.
+
 ## Release Branch/Tag
 
 Recommended pattern:

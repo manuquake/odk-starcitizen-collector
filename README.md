@@ -58,6 +58,30 @@ The local config is saved in:
 %APPDATA%\odk-control-center\starcitizen-collector.json
 ```
 
+## Build Windows Installer
+
+The Windows installer is built from this repository using Inno Setup 6.
+
+Requirements:
+
+- Node.js available as `node.exe`;
+- Inno Setup 6 compiler `ISCC.exe`;
+- PowerShell.
+
+Build locally:
+
+```powershell
+npm run build:windows-installer
+```
+
+Output:
+
+```text
+release\ODK-StarCitizen-Collector-Setup.exe
+release\ODK-StarCitizen-Collector-Portable.zip
+release\SHA256SUMS.txt
+```
+
 ## Server URL
 
 Both forms are accepted:
@@ -123,6 +147,33 @@ be used to request free or sponsored open-source signing programs, such as
 SignPath Foundation, but approval is not automatic.
 
 See [CODE_SIGNING.md](CODE_SIGNING.md).
+
+## Code Signing Policy
+
+Release signing is limited to official ODK Star Citizen Collector Windows
+installer artifacts built from this repository.
+
+Signing roles:
+
+- Repository owner and release approver: `Manuquake`.
+- Changes from external contributors must be reviewed before release.
+- Release artifacts must be built from a tagged commit.
+- SHA-256 hashes must be published with release artifacts.
+
+Privacy policy:
+
+- [PRIVACY.md](PRIVACY.md)
+
+Security policy:
+
+- [SECURITY.md](SECURITY.md)
+
+If this project is accepted for SignPath Foundation signing, signed release
+pages will state:
+
+```text
+Free code signing provided by SignPath.io, certificate by SignPath Foundation.
+```
 
 ## Disclaimer
 

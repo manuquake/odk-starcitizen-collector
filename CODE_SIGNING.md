@@ -36,3 +36,31 @@ certificate, which is not a good security model.
 3. Apply for an open-source signing program.
 4. Configure release signing through the approved provider.
 5. Publish SHA-256 checksums and signed installer artifacts.
+
+## Signing Policy
+
+Artifacts eligible for signing:
+
+- `ODK-StarCitizen-Collector-Setup.exe`
+
+Artifacts not intended for signing:
+
+- local configs;
+- collector tokens;
+- screenshots;
+- portable zip archives, unless a signing provider explicitly supports detached
+  signatures.
+
+Release signing requirements:
+
+- release must be based on a public Git tag;
+- build must be reproducible from repository scripts;
+- repository owner must approve the release;
+- release notes must identify whether the installer is signed;
+- SHA-256 checksums must be published.
+
+If SignPath Foundation signing is approved, signed release pages must include:
+
+```text
+Free code signing provided by SignPath.io, certificate by SignPath Foundation.
+```
