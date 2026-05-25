@@ -1,0 +1,23 @@
+{
+  "name": "odk-starcitizen-collector",
+  "version": "0.2.0",
+  "description": "Local Windows-friendly Star Citizen Game.log collector for ODK Entity Live.",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "collector:init": "node src/cli.js init",
+    "collector:run": "node src/cli.js run",
+    "check": "node --check src/cli.js && node --check src/config.js && node --check src/http.js && node --check src/parser.js && node --check src/url.js"
+  },
+  "keywords": [
+    "star-citizen",
+    "collector",
+    "gamelog",
+    "odk",
+    "telemetry"
+  ]
+}

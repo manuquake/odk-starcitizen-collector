@@ -1,0 +1,20 @@
+{
+  "serverUrl": "https://app.odkclan.it",
+  "clientId": "collector_xxxxxxxx",
+  "collectorToken": "INSERISCI_TOKEN_GENERATO_DAL_SITO",
+  "label": "Desktop Star Citizen",
+  "logPath": "C:\\Program Files\\Roberts Space Industries\\StarCitizen\\LIVE\\Game.log",
+  "heartbeatIntervalSeconds": 15,
+  "batchIntervalMs": 2500,
+  "maxBatchSize": 25,
+  "pollIntervalMs": 1000,
+  "screenshotProofsEnabled": true,
+  "screenshotDirectory": "C:\\Program Files\\Roberts Space Industries\\StarCitizen\\LIVE\\ScreenShots",
+  "screenshotPollIntervalMs": 5000,
+  "screenshotUploadExistingToday": true,
+  "screenshotMaxFileSizeBytes": 12582912,
+  "parserVersion": "mvp-0.3.0",
+  "collectorVersion": "0.2.0",
+  "gameInstallChannel": "LIVE",
+  "startAtEnd": true
+}

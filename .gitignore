@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build outputs and packages
+dist/
+build/
+out/
+release/
+releases/
+*.zip
+*.exe
+*.msix
+*.msixbundle
+
+# Local config, secrets, and runtime files
+.env
+.env.*
+*.local.json
+runtime-test.json
+token-test.txt
+starcitizen-collector.json
+*.token
+*.pfx
+*.cer
+*.key
+*.pem
+
+# Logs
+*.log
+*.err
+*.pid
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

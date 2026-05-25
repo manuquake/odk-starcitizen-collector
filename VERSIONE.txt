@@ -1,0 +1,16 @@
+ODK Star Citizen Collector
+
+Versione pacchetto: 0.2.0
+Parser: mvp-0.3.0
+Canale gioco predefinito: LIVE
+Backend predefinito: https://app.odkclan.it
+
+Contenuto pacchetto:
+
+- collector Node.js compilato
+- runtime Node.js portabile
+- configurazione guidata
+- selezione cartella Star Citizen / Game.log
+- upload opzionale screenshot prove
+- guida rapida
+- note sicurezza e privacy

@@ -1,0 +1,54 @@
+ODK Star Citizen Collector - Sicurezza e privacy
+
+Scopo
+
+Il collector serve a leggere Game.log di Star Citizen e inviare eventi quasi
+real-time al sito ODK. Non e un cheat, non interagisce con la memoria del gioco
+e non modifica file di Star Citizen.
+
+Cosa legge
+
+- Game.log nella cartella scelta durante la configurazione
+- nuovi screenshot nella cartella ScreenShots della stessa installazione, se la
+  funzione prove screenshot e attiva
+- la configurazione locale salvata in AppData
+
+Cosa invia al server ODK
+
+- eventi derivati dal log, per esempio sessione, location, quantum, missioni,
+  claim assicurativi, errori client rilevanti
+- heartbeat del collector
+- metadati tecnici del collector, come versione parser e label macchina
+- screenshot nuovi o recenti quando abilitati, con hash SHA-256 e metadati
+
+Cosa NON fa
+
+- non legge memoria o processi di Star Citizen
+- non usa injection, hook o reverse engineering del client
+- non legge password, cookie o sessioni Discord dal browser
+- non modifica il gioco
+- non installa servizi Windows nascosti
+- non si avvia automaticamente all'accensione, salvo modifica manuale dell'utente
+
+Percorsi usati
+
+Programma installato:
+
+%LOCALAPPDATA%\Programs\ODK Star Citizen Collector
+
+Config utente:
+
+%APPDATA%\odk-control-center\starcitizen-collector.json
+
+Rimozione completa
+
+1. Disinstalla il programma da Windows.
+2. Se vuoi rimuovere anche token e configurazione, elimina:
+
+%APPDATA%\odk-control-center\starcitizen-collector.json
+
+Nota importante
+
+Il pacchetto puo essere non firmato digitalmente. In quel caso Windows potrebbe
+mostrare "Autore sconosciuto". Per eliminare davvero questo avviso serve un
+certificato di code signing intestato all'organizzazione.
